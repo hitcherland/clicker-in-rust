@@ -37,7 +37,7 @@ jobs:
       - run: cargo binstall trunk
       - run: cargo add leptos --features=csr
       - run: rustup target add wasm32-unknown-unknown
-      - run: trunk build --release --public-url ${{ github.event.repository.name }}
+      - run: trunk build --release --public-url /${{ github.event.repository.name }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
