@@ -6,3 +6,4 @@ edition = "2021"
 [dependencies]
 console_error_panic_hook = "0.1.7"
 leptos = { version = "0.8.2", features = ["csr"] }
+turf = "0.10.1"
