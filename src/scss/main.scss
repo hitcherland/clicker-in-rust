@@ -1,3 +1,11 @@
+:root {
+    color-scheme: light dark;
+    --text: light-dark(black, white);
+    --border: light-dark(black, white);
+    --background: light-dark(white, black);
+    --middle: #7777;
+}
+
 body {
-    background: black;
+    background: var(--background);
 }

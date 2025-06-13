@@ -1,0 +1,43 @@
+.progress-bar {
+    display: flex;
+
+    label {
+        flex-grow: 1;
+        display: flex;
+        position: relative;
+        height: 1em;
+        font-size: 2em;
+        border: 1px solid var(--border);
+
+        span {
+            color: var(--text);
+            text-transform: uppercase;
+            font-family: monospace;
+            padding: 0 0.5em;
+        }
+
+        progress {
+            flex-grow: 1;
+            -webkit-appearance: none;
+
+            &::-webkit-progress-bar {
+                background-color: var(--background);
+            }
+            &::-webkit-progress-value {
+                background-color: var(--text);
+            }
+        }
+
+        span, svg {
+            color: var(--text);
+            background: var(--middle);
+            position: absolute;
+            height: 100%;
+        }
+        
+        svg {
+            right: 0;
+            cursor: pointer;
+        }
+    }
+}
