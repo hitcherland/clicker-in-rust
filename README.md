@@ -1,5 +1,7 @@
 # Rust Clicker
 
+Game available at: https://hitcherland.github.io/clicker-in-rust/
+
 Something I wrote to explore rust while still pumping out something web friendly.
 
 ## Credits
