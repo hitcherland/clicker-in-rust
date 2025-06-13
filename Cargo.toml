@@ -12,6 +12,7 @@ rust-i18n = "3"
 icondata_fi = "0.1.0"
 icondata = "0.6.0"
 leptos_icons = "0.6.1"
+leptos_meta = "0.8.2"
 
 [profile.release]
 opt-level = 'z'

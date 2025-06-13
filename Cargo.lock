@@ -235,6 +235,7 @@ dependencies = [
  "icondata_fi",
  "leptos",
  "leptos_icons",
+ "leptos_meta",
  "rust-i18n",
  "turf",
  "web-sys",
@@ -1369,6 +1370,22 @@ dependencies = [
  "server_fn_macro",
  "syn 2.0.101",
  "uuid",
+]
+
+[[package]]
+name = "leptos_meta"
+version = "0.8.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c03b2d5e0a9e7060bce4862c009ced3c2ad0afe45d005eaa4defa3872d2d2aac"
+dependencies = [
+ "futures",
+ "indexmap",
+ "leptos",
+ "once_cell",
+ "or_poisoned",
+ "send_wrapper",
+ "wasm-bindgen",
+ "web-sys",
 ]
 
 [[package]]

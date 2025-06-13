@@ -1,5 +1,6 @@
 use leptos::leptos_dom::helpers::{document, request_animation_frame};
 use leptos::prelude::*;
+use leptos_meta::Title;
 
 turf::style_sheet!("src/scss/main.scss");
 
@@ -55,12 +56,15 @@ pub fn App() -> impl IntoView {
 
     view! {
         <style>{STYLE_SHEET}</style>
-        <Lifespan
-            max_lifespan_gamedays=stats.max_lifespan_gamedays.read
-            active_time_ms=stats.active_time_ms.read
-            gamedays_per_ms=stats.gamedays_per_ms.read
-            pause=stats.paused.read
-            pause_write=stats.paused.write
-        />
+        <div>
+            <Title text=move || {t!{"title"}} />
+            <Lifespan
+                max_lifespan_gamedays=stats.max_lifespan_gamedays.read
+                active_time_ms=stats.active_time_ms.read
+                gamedays_per_ms=stats.gamedays_per_ms.read
+                pause=stats.paused.read
+                pause_write=stats.paused.write
+            />
+        </div>
     }
 }
