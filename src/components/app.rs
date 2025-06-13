@@ -39,13 +39,13 @@ impl Animator {
 
 #[component]
 pub fn App() -> impl IntoView {
+    leptos_meta::provide_meta_context();
     let stats = stats();
 
-
     let time = document()
-    .timeline()
-    .current_time()
-    .expect("Failed to get current time");
+        .timeline()
+        .current_time()
+        .expect("Failed to get current time");
 
     Animator {
         last_time_ms: time,

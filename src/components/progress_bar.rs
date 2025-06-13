@@ -4,14 +4,11 @@ turf::style_sheet!("src/scss/progress_bar.scss");
 
 #[component]
 pub fn ProgressBar(
-    #[prop(into)]
-    label: Signal<String>,
-    #[prop(into)]
-    value: Signal<f64>,
+    #[prop(into)] label: Signal<String>,
+    #[prop(into)] value: Signal<f64>,
     max: ReadSignal<f64>,
-    children: Children
+    children: Children,
 ) -> impl IntoView {
-
     view! {
         <style>{STYLE_SHEET}</style>
         <div class=ClassName::PROGRESS_BAR>
