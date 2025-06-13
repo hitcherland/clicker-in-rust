@@ -1,32 +1,5 @@
-.pause-toggle {
-    display: flex;
+.pause_toggle {
+  display: flex;
 
-    label {
-        flex-grow: 1;
-        display: flex;
-        position: relative;
-        height: 1em;
-        font-size: 2em;
-        border: 1px solid var(--border);
-
-        span {
-            position: absolute;
-            color: var(--text);
-            text-transform: uppercase;
-            font-family: monospace;
-            margin-left: 0.5em;
-        }
-
-        progress {
-            flex-grow: 1;
-            -webkit-appearance: none;
-
-            &::-webkit-progress-bar {
-                background-color: black;
-            }
-            &::-webkit-progress-value {
-                background-color: white;
-            }
-        }
-    }
+  &.paused {}
 }

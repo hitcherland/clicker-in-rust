@@ -19,6 +19,7 @@ pub fn Lifespan(
           label=label
           value=Signal::derive(value)
           max=max_lifespan_gamedays
+          paused=pause
         >
             <PauseToggle pause=pause pause_write=pause_write/>
         </ProgressBar>

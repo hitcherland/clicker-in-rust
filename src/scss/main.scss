@@ -1,11 +1,13 @@
 :root {
-    color-scheme: light dark;
-    --text: light-dark(black, white);
-    --border: light-dark(black, white);
-    --background: light-dark(white, black);
-    --middle: #7777;
+  color-scheme: light dark;
+  --text: light-dark(black, white);
+  --border: light-dark(black, white);
+  --background: light-dark(white, black);
+  --middle: #777B;
+  --hover: light-dark(#f40, #fa0);
+  --active: #f70;
 }
 
 body {
-    background: var(--background);
+  background: var(--background);
 }
